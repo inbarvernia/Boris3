@@ -22,7 +22,7 @@ working
 ## Table:
 
 Objects |  Messagese
----------------------
+----------------------
 person  |
 bike    |  use
         |  is_working?
