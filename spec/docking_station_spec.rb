@@ -10,6 +10,10 @@ describe DockingStation do
     context 'when a bike is available' do
       it 'releases a bike' do
         subject.dock(bike)
+        expect(subject.release_bike).to be_an_instance_of(Bike)
+      end
+      it 'returns something that responds to working?' do
+        subject.dock(bike)
         expect(subject.release_bike).to respond_to :working?
       end
     end
